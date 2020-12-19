@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Surfbot</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,22 +16,29 @@
       <p>Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
     </div>
 
-    <img src="assets/surfbot-logo.svg" alt="Surfbot">
-
-    <ul class="menu">
-      <li><a href="#">Praia</a></li>
-      <li><a href="#">Aulas</a></li>
-      <li><a href="#">Contato</a></li>
-      <li><a href="#">Matricule-se</a></li>
-    </ul>
+    <div class="header-container-bg">
+      <div class="header-container">
+        <img src="assets/surfbot-logo.svg" alt="Surfbot">
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Praia</a></li>
+            <li><a href="#">Aulas</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Matricule-se</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <!--intro-->
   <div class="intro">
     <div class="form-intro">
       <h1>Escola de Surf</h1>
-      <input type="email" placeholder="E-mail">
-      <a href="#">Matricule-se <img src="assets/seta.svg"></a>
+      <div class="input-matricula">
+        <input type="email" placeholder="E-mail">
+        <a href="#">Matricule-se <img src="assets/seta.svg"></a>
+      </div>
     </div>
   </div>
 
@@ -37,91 +46,97 @@
   <main class="main">
     <!--praia-->
     <section class="praia">
-      <img src="assets/foto-galeria.jpg" alt="Praia">
-      <img src="assets/mapa.jpg" alt="Mapa">
+      <div class="coluna-1">
+          <img src="assets/foto-galeria.jpg" alt="Praia">
+          <img class="mapa" src="assets/mapa.jpg" alt="Mapa">
 
-      <ul class="como-chegar">
-        <legend>Como chegar</legend>
-        <li><span>Carro</span> pela via Lúcio Costa sentido Barra</li>
-        <li><span>Ônibus</span> linhas 2333, 138, 189 e 170</li>
-        <li><span>Metrô</span> linha azul sentido Zona Sul</li>
-      </ul>
-
-      <h1><span>Aulas</span> em uma das melhores escolas do <span>Rio</span>.</h1>
-      <ul class="info-lista">
-        <li><img src="assets/sandalhas.svg"> 8km de costa</li>
-        <li><img src="assets/coco.svg"> Restaurantes à beira mar</li>
-        <li><img src="assets/boia.svg"> Salva-vidas a cada 300m</li>
-      </ul> 
-
-      <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
-
-      <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
-    </section>
-
-    <!--separador-->
-    <img src="assets/ondas.svg">
-
-    <!--aulas-->
-    <section class="aulas">
-      <h1>Aulas</h1>
-      <div class="list-aulas">
-        <article class="item-aulas">
-          <div class="surfbot-icon-aulas">
-            <img src="assets/surfbot-icon.svg">
-          </div>
-          <h2>Infantil</h2>
-          <ul class="info-aulas">
-            <li>Público entre 5 e 15 anos</li>
-            <li>Equipamentos fornecidos</li>
-            <li>Horários de Sex. à Sáb.</li>
-            <li>2 horas seguidas de aula</li>
-          </ul>
-
-          <strong>R$ 49,00 / Aula</strong>
-
-          <a href="#">Matricule-se <img src="assets/seta.svg"></a>
-        </article>
-
-        <article class="item-aulas">
-          <div class="surfbot-icon-aulas">
-            <img src="assets/surfbot-icon.svg">
-            <img src="assets/surfbot-icon.svg">
-          </div>
-          <h2>Adulto</h2>
-          <ul class="info-aulas">
-            <li>Público entre 16 e 80 anos</li>
-            <li>Equipamentos fornecidos</li>
-            <li>Horários de Sex. à Sáb.</li>
-            <li>3 horas seguidas de aula</li>
-          </ul>
-
-          <strong>R$ 69,00 / Aula</strong>
-
-          <a href="#">Matricule-se <img src="assets/seta.svg"></a>
-        </article>
-
-        <article class="item-aulas">
-          <div class="surfbot-icon-aulas">
-            <img src="assets/surfbot-icon.svg">
-            <img src="assets/surfbot-icon.svg">
-            <img src="assets/surfbot-icon.svg">
-          </div>
-          <h2>Profissional</h2>
-          <ul class="info-aulas">
-            <li>Experiência de 3 anos no surf</li>
-            <li>Você deve trazer o equipamento</li>
-            <li>Horários de Sex. à Sáb.</li>
-            <li>4 horas seguidas de aula</li>
-          </ul>
-
-          <strong>R$ 99,00 / Aula</strong>
-
-          <a href="#">Matricule-se <img src="assets/seta.svg"></a>
-        </article>
+        <ul class="como-chegar">
+          <legend>Como chegar</legend>
+          <li><span>Carro</span> pela via Lúcio Costa sentido Barra</li>
+          <li><span>Ônibus</span> linhas 2333, 138, 189 e 170</li>
+          <li><span>Metrô</span> linha azul sentido Zona Sul</li>
+        </ul>
       </div>
 
-      <p>Possui um grupo com mais de <span>3 pessoas</span>? <br> Entre <a href="#">em contato</a> para um desconto personalizado.</p>
+      <div class="coluna-2">
+        <h1><span>Aulas</span> em uma das melhores escolas do <span>Rio</span>.</h1>
+        <ul class="info-lista">
+          <li><img src="assets/sandalhas.svg"> <span>8km de costa</span></li>
+          <li><img src="assets/coco.svg"> <span>Restaurantes à beira mar</span></li>
+          <li><img src="assets/boia.svg"> <span>Salva-vidas a cada 300m</span></li>
+        </ul> 
+
+        <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
+
+        <p>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.</p>
+      </div>
+    </section>
+
+    <!--aulas-bg-->
+    <section class="aulas-bg">
+      <div class="aulas">
+        <!--separador-->
+        <img class="separador" src="assets/ondas.svg">
+        <!--aulas-->
+        <h1>Aulas</h1>
+        <div class="list-aulas">
+          <article class="item-aulas">
+            <div class="surfbot-icon-aulas">
+              <img src="assets/surfbot-icon.svg">
+            </div>
+            <h2>Infantil</h2>
+            <ul class="info-aulas">
+              <li>Público entre 5 e 15 anos</li>
+              <li>Equipamentos fornecidos</li>
+              <li>Horários de Sex. à Sáb.</li>
+              <li>2 horas seguidas de aula</li>
+            </ul>
+
+            <strong>R$ 49,00 / Aula</strong>
+
+            <a href="#">Matricule-se <img src="assets/seta.svg"></a>
+          </article>
+
+          <article class="item-aulas">
+            <div class="surfbot-icon-aulas">
+              <img src="assets/surfbot-icon.svg">
+              <img src="assets/surfbot-icon.svg">
+            </div>
+            <h2>Adulto</h2>
+            <ul class="info-aulas">
+              <li>Público entre 16 e 80 anos</li>
+              <li>Equipamentos fornecidos</li>
+              <li>Horários de Sex. à Sáb.</li>
+              <li>3 horas seguidas de aula</li>
+            </ul>
+
+            <strong>R$ 69,00 / Aula</strong>
+
+            <a href="#">Matricule-se <img src="assets/seta.svg"></a>
+          </article>
+
+          <article class="item-aulas">
+            <div class="surfbot-icon-aulas">
+              <img src="assets/surfbot-icon.svg">
+              <img src="assets/surfbot-icon.svg">
+              <img src="assets/surfbot-icon.svg">
+            </div>
+            <h2>Profissional</h2>
+            <ul class="info-aulas">
+              <li>Experiência de 3 anos no surf</li>
+              <li>Você deve trazer o equipamento</li>
+              <li>Horários de Sex. à Sáb.</li>
+              <li>4 horas seguidas de aula</li>
+            </ul>
+
+            <strong>R$ 99,00 / Aula</strong>
+
+            <a href="#">Matricule-se <img src="assets/seta.svg"></a>
+          </article>
+        </div>
+
+        <p>Possui um grupo com mais de <span>3 pessoas</span>? <br> Entre <a href="#">em contato</a> para um desconto personalizado.</p>
+      </div>
     </section>
 
     <!--blockquote-->
