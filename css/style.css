@@ -399,3 +399,157 @@ html {
     color: #445566;
     border-bottom: 2px solid #FF3726;
 }
+
+/*blockquote*/
+.quote {
+    background: url(/assets/foto-quote@2x.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 200px;
+    text-align: center;
+}
+
+.quote > p {
+    font-family: 'Alice', serif;
+    font-size: 72px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.quote strong {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+/*contato*/
+.contato {
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.contato h1 {
+    font-family: 'Alice', serif;
+    font-weight: 400;
+    font-size: 72px;
+    color: #445566;
+    text-align: center;
+}
+
+.contato-container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 30px;
+}
+
+.formulario {
+    border-right: 2px solid #EFF4F9;
+    padding-right: 100px;    
+}
+
+.formulario input, textarea {
+    display: block;
+    resize: none;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 2px #bbccdd65;
+    background: #EFF4F9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.formulario label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #445566;
+    font-weight: bold;
+}
+
+.formulario input, textarea {
+    margin-bottom: 15px;
+    width: 470px;
+}
+
+.formulario textarea {
+    margin-bottom: 30px;
+}
+
+.contato-container .enviar-mensagem {
+    padding: 10px 50px 10px 15px;
+    background: #445566;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.contato-container .enviar-mensagem > img {
+    position: absolute;
+    right: 15px;
+    bottom: 16px;
+}
+
+/*dados*/
+.dados {
+    margin: 0 60px;
+}
+
+.dados ul + ul {
+    border-top: 2px solid #EFF4F9;
+    width: 270px;
+}
+
+.dados ul legend, a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #445566;
+    font-weight: bold;
+}
+
+.dados ul legend {
+    margin-bottom: 5px;
+}
+
+.email-telefone, .hora {
+    margin-top: 15px;
+    padding: 15px 0;
+}
+
+.dados ul li a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.dados ul li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #445566;
+}
+
+/*footer*/
+.footer {
+    background: #1188EE;
+}
+
+.footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.footer-container p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
