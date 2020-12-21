@@ -348,6 +348,16 @@ html {
     .coluna-1 img {
         width: 300px;
     }
+    
+.info-lista li > span {
+    font-size: 18px;
+    }
+}
+
+@media(max-width: 445px) {
+    .coluna-2 h1 {
+        font-size: 44px;
+    }
 }
 
 /*aulas*/
@@ -362,6 +372,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .separador {
@@ -509,6 +520,12 @@ html {
     border-bottom: 2px solid #FF3726;
 }
 
+@media(max-width: 400px) {
+    .aulas p, .aulas p > a {
+        font-size: 16px;
+    }
+}
+
 /*blockquote*/
 .quote {
     background: url(/assets/foto-quote@2x.jpg) center center no-repeat;
@@ -559,7 +576,9 @@ html {
     padding: 0px 20px;
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    justify-content: center;
     grid-gap: 30px;
 }
 
@@ -569,10 +588,7 @@ html {
     font-size: 72px;
     color: #445566;
     text-align: center;
-}
-
-.contato-container {
-
+    grid-column: 1/-1;
 }
 
 
@@ -609,7 +625,7 @@ html {
     margin-bottom: 30px;
 }
 
-.contato-container .enviar-mensagem {
+.contato .enviar-mensagem {
     padding: 10px 50px 10px 15px;
     background: #445566;
     border-radius: 5px;
@@ -621,14 +637,14 @@ html {
     position: relative;
 }
 
-.contato-container .enviar-mensagem > img {
+.contato .enviar-mensagem > img {
     position: absolute;
     right: 15px;
     bottom: 16px;
 }
 
-@media(max-width: 1360px) {
-    .contato-container {
+@media(max-width: 1060px) {
+    .contato {
         grid-template-columns: 1fr;
         max-width: 80%;
         align-items: center;
@@ -636,6 +652,12 @@ html {
         justify-items: center;
         align-content: center;
         grid-gap: 0px;
+        margin: 30px auto;
+    }
+
+    .contato h1 {
+        font-size: 54px;
+        margin-bottom: 30px;
     }
 
     .formulario {
@@ -648,11 +670,19 @@ html {
         max-width: 200px;
         margin: 0 auto 15px auto;
     }
+
 }
 
 /*dados*/
 .dados {
     margin: 0 60px;
+    background: url(/assets/bg-icones.svg) no-repeat;
+}
+
+@media(max-width: 1060px) {
+    .dados {
+        margin: 60px;
+    }
 }
 
 .dados ul + ul {
@@ -707,4 +737,10 @@ html {
     font-size: 18px;
     color: white;
     font-weight: 700;
+}
+
+@media(max-width: 580px) {
+    .footer-container {
+        flex-direction: column;
+    }
 }
