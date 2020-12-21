@@ -528,7 +528,7 @@ html {
 
 /*blockquote*/
 .quote {
-    background: url(/assets/foto-quote@2x.jpg) center center no-repeat;
+    background: url(/assets/foto-quote.jpg) center center no-repeat;
     background-size: cover;
     padding: 200px;
     text-align: center;
