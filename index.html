@@ -147,47 +147,43 @@
 
     <!--contato-->
     <section class="contato">
-      <h1>Contato</h1>
+      <!-- <h1>Contato</h1> -->
+      <form class="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
 
-      <div class="contato-container">
-        <form class="formulario">
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome">
+        <label for="e-mail">E-mail</label>
+        <input type="email" name="e-mail" id="e-mail">
 
-          <label for="e-mail">E-mail</label>
-          <input type="email" name="e-mail" id="e-mail">
+        <label for="mensagem">Mensagem</label>
+        <textarea rows="10"></textarea>
 
-          <label for="mensagem">Mensagem</label>
-          <textarea rows="10"></textarea>
+        <a class="enviar-mensagem" href="#">Enviar mensagem <img src="assets/seta.svg"></a>
+      </form>
 
-          <a class="enviar-mensagem" href="#">Enviar mensagem <img src="assets/seta.svg"></a>
-        </form>
+      <div class="dados">
+        <ul class="endereco">
+          <legend>Endereço</legend>
+          <li>Praia Mansa n° 47.</li>
+          <li>Rio de Janeiro - RJ</li>
+          <li>Procure a barraca vermelha</li>
+          <li><a href="#">Ver no mapa <img src="assets/seta-vermelha.svg"></a></li>
+        </ul>
 
-        <div class="dados">
-          <ul class="endereco">
-            <legend>Endereço</legend>
-            <li>Praia Mansa n° 47.</li>
-            <li>Rio de Janeiro - RJ</li>
-            <li>Procure a barraca vermelha</li>
-            <li><a href="#">Ver no mapa <img src="assets/seta-vermelha.svg"></a></li>
-          </ul>
+        <ul class="email-telefone">
+          <legend>E-mail & Telefone</legend>
+          <li>contato@surfbot.com</li>
+          <li>21 9999-9999</li>
+        </ul>
 
-          <ul class="email-telefone">
-            <legend>E-mail & Telefone</legend>
-            <li>contato@surfbot.com</li>
-            <li>21 9999-9999</li>
-          </ul>
-
-          <ul class="hora">
-            <legend>Horário</legend>
-            <li>De sexta à sábado</li>
-            <li>Das 06:00 às 14:00</li>
-          </ul>
-        </div>
-
-        <img src="assets/bg-icones.svg">
-
+        <ul class="hora">
+          <legend>Horário</legend>
+          <li>De sexta à sábado</li>
+          <li>Das 06:00 às 14:00</li>
+        </ul>
       </div>
+
+      <img class="bg-icons" src="assets/bg-icones.svg">
     </section>
   </main>
 
